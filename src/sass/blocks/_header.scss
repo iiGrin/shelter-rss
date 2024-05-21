@@ -1,0 +1,73 @@
+.header {
+    color: rgb(255, 255, 255);
+
+    &__wrapper {
+        position: absolute;
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+
+        a {
+            width: 184px;
+            height: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        span {
+            display: block;
+            font-family: "Georgia", serif;
+        }
+
+        &-title {
+            color: $main-color;
+            font-size: 32px;
+            line-height: 110%;
+            font-weight: 400;
+            letter-spacing: 0.054em;
+        }
+
+        &-subtitle {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 15px;
+            letter-spacing: 0.082rem;
+            text-align: center;
+            padding-left: 4px;
+        }
+    }
+
+    &__nav-menu {
+
+        &__list {
+            width: 443px;
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+
+            &__item {
+                height: 26px;
+
+                a {
+                    font-size: 15px;
+                    line-height: 160%;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    border-bottom: 3px solid $main-color;
+
+                    a {
+                        color: rgb(250, 250, 250)
+                    }
+                }
+            }
+        }
+    }
+}
