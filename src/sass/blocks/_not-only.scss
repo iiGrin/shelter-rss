@@ -1,0 +1,48 @@
+.not-only {
+    padding-top: 180px;
+    background: $only-bg;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__block {
+        padding-top: 163px;
+        max-width: 460px;
+
+        &__text {
+            margin-top: 42px;
+            font-size: 15px;
+            line-height: 160%;
+            color: rgb(205, 205, 205);
+        }
+    }
+}
+
+@media screen and (max-width: 1084px) {
+    .not-only  {
+
+        &__block {
+            padding-top: 0;
+            align-self: center;
+            width: 38%;
+        }
+
+        &__photo  {
+            max-width: 60%;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .not-only {
+        &__wrapper {
+            flex-direction: column;
+
+            &__block {
+                width: 100%;
+            }
+        }
+    }
+}
