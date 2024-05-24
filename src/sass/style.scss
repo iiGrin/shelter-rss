@@ -25,10 +25,22 @@ a {
     margin: 0 auto;
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1280px) {
     .container {
         width: auto;
         margin: 0 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 0 30px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .container {
+        margin: 0 10px;
     }
 }
 
@@ -36,4 +48,6 @@ a {
 @import "blocks/buttons";
 
 @import "blocks/header";
-@import "blocks/not-only";
+@import "blocks/not-only/not-only";
+
+@import "blocks/not-only/not-only-media";

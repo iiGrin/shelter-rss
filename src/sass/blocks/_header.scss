@@ -43,6 +43,24 @@
         }
     }
 
+    .hamburger {
+        display: none;
+        width: 30px;
+        height: 22px;
+        flex-direction: column;
+        justify-content: space-between;
+
+        span {
+            display: block;
+            height: 2px;
+            background-color: $main-color;
+        }
+
+        &_active {
+            transform: rotateX(90deg);
+        }
+    }
+
     &__nav-menu {
 
         &__list {
@@ -79,3 +97,17 @@
         }
     }
 }
+
+@media screen and (max-width: 737px) {
+    .header {
+        &__nav-menu {
+            display: none;
+        }
+
+        .hamburger {
+            display: flex;
+        }
+    }
+    
+}
+

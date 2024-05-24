@@ -3,5 +3,19 @@
     font-weight: 400;
     font-size: 44px;
     line-height: 130%;
-    color: rgb(255, 255, 255);
+
+    &_not-only {
+        color: rgb(255, 255, 255);
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .heading {
+        font-size: 25px;
+
+        &_not-only {
+            width: 60%;
+            text-align: center;
+        }
+    }
 }

@@ -1,0 +1,24 @@
+.not-only {
+    padding-top: 180px;
+    background: $only-bg;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 163px;
+        max-width: 460px;
+
+        &__text {
+            margin: 42px 0 42px 0;
+            font-size: 15px;
+            line-height: 160%;
+            color: rgb(205, 205, 205);
+        }
+    }
+}
