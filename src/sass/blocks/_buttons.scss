@@ -8,5 +8,10 @@
     line-height: 130%;
     font-family: "Georgia", serif;
     color: rgb(41, 41, 41);
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(253, 220, 196);
+    }
 }
 
