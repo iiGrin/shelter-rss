@@ -4,18 +4,26 @@
     font-size: 44px;
     line-height: 130%;
 
-    &_not-only {
+    &_main {
         color: rgb(255, 255, 255);
+    }
+
+    &_section {
+        font-size: 35px;
+        letter-spacing: 0.054em;
     }
 }
 
 @media screen and (max-width: 440px) {
     .heading {
         font-size: 25px;
+        text-align: center;
+        width: 60%;
 
-        &_not-only {
-            width: 60%;
-            text-align: center;
+
+        &_section {
+            margin: 0 auto;
+            width: 80%;
         }
     }
 }
