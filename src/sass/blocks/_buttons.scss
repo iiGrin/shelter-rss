@@ -10,8 +10,38 @@
     color: rgb(41, 41, 41);
     cursor: pointer;
 
+    &_friends {
+        display: block;
+        width: 261px;
+        margin: 0 auto;
+    }
+
     &:hover {
-        background-color: rgb(253, 220, 196);
+        background-color: $hover-button;
+    }
+
+    &_item {
+        background-color: unset;
+        border: 2px solid $hover-button;
+    }
+
+    &_arrow {
+        width: 52px;
+        border: 2px solid $hover-button;
+        background-color: unset;
+        background: url("../icons/arrow.svg") center no-repeat;
     }
 }
 
+@media screen and (max-width: 440px) {
+    .button {
+
+        &_friends {
+            width: 260px;
+        }
+
+        &_item {
+            width: 187px;
+        }
+    }
+}

@@ -11,6 +11,18 @@
     &_section {
         font-size: 35px;
         letter-spacing: 0.054em;
+
+    }
+
+    &_our-friends {
+        width: 400px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &_item {
+        font-size: 20px;
+        line-height: 23px;
     }
 }
 
@@ -24,6 +36,10 @@
         &_section {
             margin: 0 auto;
             width: 80%;
+        }
+
+        &_our-friends {
+            width: 300px;
         }
     }
 }
