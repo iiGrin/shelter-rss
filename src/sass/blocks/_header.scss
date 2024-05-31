@@ -13,7 +13,7 @@
     &__logo {
 
         a {
-            width: 200px;
+            width: 196px;
             height: 60px;
             display: flex;
             flex-direction: column;
@@ -22,10 +22,14 @@
 
         span {
             display: block;
-            font-family: "Georgia", serif;
+
+            &:active {
+                color: black;
+            }
         }
 
         &-title {
+            font-family: "Georgia", serif;
             color: $main-color;
             font-size: 32px;
             line-height: 110%;
@@ -34,11 +38,11 @@
         }
 
         &-subtitle {
+            padding-left: 4px;
             font-size: 13px;
             font-weight: 400;
             line-height: 15px;
             letter-spacing: 0.082rem;
-            text-align: center;
         }
     }
 

@@ -1,0 +1,29 @@
+.help {
+    padding: 80px 0 100px 0;
+
+    &__items {
+        margin: 0 auto;
+        margin-top: 60px;
+        max-width: 1026px;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 120px;
+        row-gap: 55px;
+        
+    }
+
+    &__item {
+        height: 113px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Georgia', serif;
+        text-align: center;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.058rem;
+    }
+}

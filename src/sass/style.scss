@@ -8,9 +8,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     margin: 0;
 }
 
@@ -48,10 +52,14 @@ a {
 @import "blocks/buttons";
 
 @import "blocks/header";
+
 @import "blocks/not-only/not-only";
 @import "blocks/about/about";
 @import "blocks/our-friends/our-friends";
+@import "blocks/help/help";
+
 
 @import "blocks/not-only/not-only-media";
 @import "blocks/about/about-media";
 @import "blocks/our-friends/our-friends-media";
+@import "blocks/help/help-media";
