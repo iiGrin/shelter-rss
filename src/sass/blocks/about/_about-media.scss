@@ -33,6 +33,10 @@
         &__block {
             padding: 0 15px;
 
+            &__text {
+                text-align: justify;
+            }
+
             :nth-child(2) {
                 margin: 22px 0;
             }
