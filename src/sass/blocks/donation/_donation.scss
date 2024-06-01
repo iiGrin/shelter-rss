@@ -1,0 +1,51 @@
+.donation {
+    padding: 80px 0 100px 0;
+    background-color: rgb(246, 246, 246);
+
+    &__wrapper {
+        max-width: 915px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 30px;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    &__bank-info {
+        font-size: 15px;
+        line-height: 110%;
+        letter-spacing: 0.058rem;
+    }
+
+    &__card-number {
+        position: relative;
+        max-width: 349px;
+        height: 43px;
+        padding: 10px 15px 10px 60px;
+        background-color: $main-color;
+        border-radius: 9px;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.058rem;
+    }
+
+    &__card-icon {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+
+    &__legal-info {
+        font-size: 12px;
+        line-height: 18px;
+        font-style: italic;
+        color: rgb(178, 178, 178);
+    }
+}
+

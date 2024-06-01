@@ -1,0 +1,66 @@
+@media screen and (max-width: 1084px) {
+    .donation {
+
+        &__wrapper {
+            column-gap: 2%;
+        }
+
+        &__photo {
+            max-width: 48%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .donation {
+
+        &__wrapper {
+            max-width: 505px;
+            flex-direction: column;
+            row-gap: 60px;
+        }
+
+        &__photo {
+            max-width: 100%;
+            order: 2;
+        }
+
+        &__block {
+            max-width: 380px;
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .donation {
+        padding: 42px 0px;
+
+        &__wrapper {
+            row-gap: 42px;
+        }
+
+        &__photo {
+            max-width: 86.8%;
+        }
+
+        &__block {
+            align-items: center;
+        }
+
+        &__bank-info {
+            text-align: center;
+        }
+
+        &__card-number {
+            max-width: 93.7%;
+            padding-top: 13px;
+            font-size: 15px;
+            line-height: 110%;
+        }
+
+        &__legal-info {
+            max-width: 93.3%;
+            text-align: justify;
+        }
+    }
+}
