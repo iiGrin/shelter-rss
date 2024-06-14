@@ -69,6 +69,14 @@
 
         &__items {
             height: 208px;
+
+            &_location {
+                height: 222px;
+            }
+        }
+
+        &__photo {
+            max-width: 86.7%;
         }
     } 
 }

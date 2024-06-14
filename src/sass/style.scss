@@ -48,22 +48,30 @@ a {
     }
 }
 
+// variables
+@import "blocks/header";
 @import "blocks/headings";
 @import "blocks/buttons";
 @import "blocks/footer";
 
-@import "blocks/header";
-
+// main page
 @import "blocks/not-only/not-only";
 @import "blocks/about/about";
 @import "blocks/our-friends/our-friends";
 @import "blocks/help/help";
 @import "blocks/donation/donation";
 
-
 @import "blocks/not-only/not-only-media";
 @import "blocks/about/about-media";
 @import "blocks/our-friends/our-friends-media";
 @import "blocks/help/help-media";
 @import "blocks/donation/donation-media";
+
+// our-pets page 
+@import "blocks/our-pets/our-pets";
+
+@import "blocks/our-pets/our-pets-media";
+
+
+
 
