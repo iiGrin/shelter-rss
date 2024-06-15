@@ -1,107 +1,120 @@
 .our-friends {
     padding: 80px 0 100px 0;
     background-color: rgb(246, 246, 246);
+}
 
-    .slider {
-        margin: 60px 0;
+.slider {
+    margin: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__content {
+        width: 990px;
+        margin: 0 12px;
         display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        justify-content: space-between;
 
-        &__content {
-            width: 990px;
-            margin: 0 12px;
+        &_our-pets {
+            width: 100%;
+            margin: 0;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px 40px;
+        }
+    }
+
+    &__controller {
+
+        &_next {
+            transform: rotateY(180deg);
+        }
+    }
+
+    &__item {
+        width: 270px;
+        height: 435px;
+        border-radius: 9px;
+        background-color: rgb(250, 250, 250);
+
+        &__descr {
+            height: 165px;
             display: flex;
-            justify-content: space-between;
-        }
-
-        &__controller {
-
-            &_next {
-                transform: rotateY(180deg);
-            }
-        }
-
-        &__item {
-            width: 270px;
-            height: 435px;
-            border-radius: 9px;
-            background-color: rgb(250, 250, 250);
-
-            &__descr {
-                height: 165px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
-            }
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
         }
     }
 }
 
 @media screen and (max-width: 1084px) {
-    .our-friends {
-        .slider__content {
-            justify-content: space-around;
+    .slider__content {
+        justify-content: space-around;
 
-            :nth-child(3) {
+        :nth-child(3) {
+            display: none;
+        }
+
+        &_our-pets {
+            justify-content: center;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .slider__content {
+        justify-content: space-between;
+
+        &_our-pets {
+            justify-content: center;
+        }
+    }
+}
+
+
+@media screen and (max-width: 738px) {
+
+    .slider {
+
+        &__content {
+            justify-content: center;
+        }
+
+        &__item {
+            &_tablet {
                 display: none;
             }
         }
     }
 }
 
-@media screen and (max-width: 768px) {
-    .our-friends {
-        .slider__content {
-            justify-content: space-between;
-        }
-    }
-}
-
-@media screen and (max-width: 738px) {
-    .our-friends {
-        
-        .slider {
-
-            &__content {
-                justify-content: center;
-            }
-    
-            &__item {
-                &_tablet {
-                    display: none;
-                }
-            }
-        }
-    }
-}
 
 @media screen and (max-width: 440px) {
     .our-friends {
         padding: 42px 0;
+    }
 
-        .slider {
-            position: relative;
-            flex-direction: column;
-            margin: 42px 0 114px 0;
+    .slider {
+        position: relative;
+        flex-direction: column;
+        margin: 42px 0 114px 0;
 
-            &__content {
-                width: 100%;
+        &__content {
+            width: 100%;
+        }
+
+        &__controller {
+            position: absolute;
+            bottom: -74px;
+
+            &_prev {
+                order: 2;
+                transform: translateX(-66px);
             }
 
-            &__controller {
-                position: absolute;
-                bottom: -74px;
-
-                &_prev {
-                    order: 2;
-                    transform: translateX(-66px);
-                }
-
-                &_next {
-                    transform: translateX(66px) rotateY(180deg);
-                }
+            &_next {
+                transform: translateX(66px) rotateY(180deg);
             }
         }
     }
