@@ -37,6 +37,22 @@
         background-color: unset;
         background: url("../icons/arrow.svg") center no-repeat;
     }
+
+    &_circle {
+        width: 52px;
+        background-color: unset;
+        border: 2px solid $main-color;
+
+        &:hover {
+            background-color: $main-color;
+        }
+    }
+
+    &_cross {
+        position: absolute;
+        top: -52px;
+        right: -42px;
+    }
 }
 
 @media screen and (max-width: 440px) {
@@ -48,6 +64,10 @@
 
         &_item {
             width: 187px;
+        }
+
+        &_cross {
+            right: -31px;
         }
     }
 }

@@ -9,6 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -52,6 +53,7 @@ a {
 @import "blocks/header";
 @import "blocks/headings";
 @import "blocks/buttons";
+@import "blocks/pet-card";
 @import "blocks/footer";
 
 // main page
@@ -71,7 +73,3 @@ a {
 @import "blocks/our-pets/our-pets";
 
 @import "blocks/our-pets/our-pets-media";
-
-
-
-

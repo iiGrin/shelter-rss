@@ -1,11 +1,12 @@
 .heading {
     font-family: "Georgia", serif;
+    color: #545454;
     font-weight: 400;
     font-size: 44px;
     line-height: 130%;
 
     &_main {
-        color: rgb(255, 255, 255);
+        color: #FFFFFF;
     }
 
     &_section {
@@ -29,9 +30,18 @@
         margin: 0 auto;
     }
 
+    &_footer {
+        color: #FFFFFF;
+    }
+
     &_item {
         font-size: 20px;
         line-height: 23px;
+    }
+
+    &_pet-card {
+        font-size: 35px;
+        line-height: 130%;
     }
 }
 
@@ -49,6 +59,11 @@
 
         &_our-friends {
             width: 100%;
+        }
+
+        &_pet-card {
+            width: 100%;
+            font-size: 35px;
         }
     }
 }

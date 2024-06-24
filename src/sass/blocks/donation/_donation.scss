@@ -19,6 +19,7 @@
     }
 
     &__bank-info {
+        font-family: "Georgia", serif;
         font-size: 15px;
         line-height: 110%;
     }
@@ -30,6 +31,8 @@
         padding: 10px 15px 10px 60px;
         background-color: $main-color;
         border-radius: 9px;
+        font-family: "Georgia", serif;
+        color: rgb(84, 84, 84);
         font-size: 20px;
         line-height: 23px;
         letter-spacing: 0.058rem;
