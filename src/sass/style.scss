@@ -24,6 +24,13 @@ a {
     color: rgb(205, 205, 205);
 }
 
+.body {
+
+    &_lock {
+        overflow: hidden;
+    }
+}
+
 .container {
     position: relative;
     width: 1200px;
