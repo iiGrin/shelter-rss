@@ -109,16 +109,20 @@
             </h2>
             <div class="slider">
                 <div class="slider__controller slider__controller_prev">
-                    <button class="button button_arrow"></button>
+                    <button id="prev" class="button button_arrow"></button>
                 </div>
                 <div class="slider__content">
-                    <div class="slider__item slider__item_mobile">
+                    <div class="slider__item slider__item_mobile"></div>
+                    <div class="slider__item slider__item_tablet"></div>
+                    <div class="slider__item slider__item_pc"></div>
+
+                    <!-- <div class="slider__item slider__item_mobile">
                         <div class="slider__item__photo">
                             <img src="img/pets/pets-jennifer.png" alt="doggy Jennifer">
                         </div>
                         <div class="slider__item__descr">
                             <h3 class="heading heading_item">Jennifer</h3>
-                            <button class="button button_item">Learn more</button>
+                            <button class="button button_item button_popup">Learn more</button>
                         </div>
                     </div>
                     <div class="slider__item slider__item_tablet">
@@ -127,7 +131,7 @@
                         </div>
                         <div class="slider__item__descr">
                             <h3 class="heading heading_item">Jennifer</h3>
-                            <button class="button button_item">Learn more</button>
+                            <button class="button button_item button_popup">Learn more</button>
                         </div>
                     </div>
                     <div class="slider__item slider__item_pc">
@@ -136,12 +140,12 @@
                         </div>
                         <div class="slider__item__descr">
                             <h3 class="heading heading_item">Jennifer</h3>
-                            <button class="button button_item">Learn more</button>
+                            <button class="button button_item button_popup">Learn more</button>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="slider__controller slider__controller_next">
-                    <button class="button button_arrow"></button>
+                    <button id="next" class="button button_arrow"></button>
                 </div>
             </div>
             <a href="our-pets.html" class="button button_friends">Get to know the rest</a>
@@ -255,11 +259,13 @@
                     <h2 class="heading heading_section heading_footer">
                         We are waiting for your visit
                     </h2>
-                    <a href="https://www.google.com/maps?&q=42.35856701293684, -71.05472941827963" target="_blank" class="footer__item">
+                    <a href="https://www.google.com/maps?&q=42.35856701293684, -71.05472941827963" target="_blank"
+                        class="footer__item">
                         <img src="icons/icon-footer/icon-marker.svg" alt="marker icon">
                         <span>1 Central Street, Boston (entrance from the store)</span>
                     </a>
-                    <a href="https://www.google.com/maps?&q=51.42025328395755, -0.20012231720168605" target="_blank" class="footer__item">
+                    <a href="https://www.google.com/maps?&q=51.42025328395755, -0.20012231720168605" target="_blank"
+                        class="footer__item">
                         <img src="icons/icon-footer/icon-marker.svg" alt="marker icon">
                         <span>18 South Park, London</span>
                     </a>
@@ -268,6 +274,14 @@
             </div>
         </div>
     </footer>
+
+    <div id="popup" class="popup">
+        <div class="pet-card">
+            <button class="button button_circle button_cross close-popup">
+                <img src="icons/cross.svg" alt="cross" class="cross">
+            </button>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>

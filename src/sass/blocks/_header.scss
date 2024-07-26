@@ -113,7 +113,7 @@
                 border-bottom: 3px solid $main-color;
 
                 a {
-                    color: rgb(250, 250, 250)
+                    color: rgb(250, 250, 250);
                 }
             }
 
@@ -157,6 +157,10 @@
 
                 a {
                     font-size: 32px;
+                }
+
+                &_active a {
+                        color: rgb(250, 250, 250);
                 }
             }
         }

@@ -51,6 +51,7 @@
         height: 435px;
         border-radius: 9px;
         background-color: rgb(250, 250, 250);
+        transition: all 1s;
 
         &__descr {
             height: 165px;
@@ -62,7 +63,7 @@
 
         &:hover {
             cursor: pointer;
-        }
+        }  
     }
 
     &_our-pets {
