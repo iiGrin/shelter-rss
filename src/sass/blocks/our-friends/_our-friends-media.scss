@@ -57,7 +57,9 @@
 
     .slider {
         position: relative;
+
         flex-direction: column;
+
         margin: 42px 0 114px 0;
 
         &__content {
@@ -70,6 +72,7 @@
 
             &_prev {
                 order: 2;
+
                 transform: translateX(-66px);
             }
 
@@ -79,6 +82,7 @@
 
             &_our-pets {
                 position: unset;
+                
                 width: 300px;
             }
         }

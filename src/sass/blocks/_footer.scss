@@ -1,6 +1,7 @@
 .footer {
-    padding-top: 40px;
     background: $only-bg;
+
+    padding-top: 40px;
 
     &__wrapper {
         display: flex;
@@ -8,12 +9,14 @@
     }
 
     &__items {
-        margin-top: 16px;
-        width: 278px;
-        height: 234px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        width: 278px;
+        height: 234px;
+
+        margin-top: 16px;
 
         &_location {
             width: 302px;
@@ -21,10 +24,13 @@
 
         span {
             display: block;
+            
             width: 100%;
+
             margin-left: 20px;
-            color: $main-color;
+
             font-family: "Georgia", serif;
+            color: $main-color;
             font-size: 20px;
             line-height: 115%;
             letter-spacing: 0.058rem;

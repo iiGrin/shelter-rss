@@ -10,10 +10,11 @@
 @media screen and (max-width: 768px) {
     .help {
         &__items {
-            max-width: 630px;
             justify-content: space-between;
             column-gap: 60px;
             row-gap: 55px;
+
+            max-width: 630px;
         }
 
         &__item {
@@ -27,16 +28,19 @@
         padding: 42px 0;
 
         &__items {
-            margin-top: 42px;
-            padding: 0 5px;
-            max-width: 400px;
             column-gap: 30px;
             row-gap: 30px;
+
+            max-width: 400px;
+
+            margin-top: 42px;
+            padding: 0 5px;
         }
 
         &__item {
-            height: 87px;
             width: 130px;
+            height: 87px;
+            
             font-size: 15px;
             line-height: 110%;
 

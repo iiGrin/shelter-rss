@@ -1,21 +1,25 @@
 .donation {
-    padding: 80px 0 100px 0;
     background-color: rgb(246, 246, 246);
+    
+    padding: 80px 0 100px 0;
 
     &__wrapper {
-        max-width: 915px;
-        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
         column-gap: 30px;
+
+        max-width: 915px;
+
+        margin: 0 auto;
     }
 
     &__block {
-        max-width: 380px;
         display: flex;
         flex-direction: column;
         row-gap: 20px;
+
+        max-width: 380px;
     }
 
     &__bank-info {
@@ -26,11 +30,14 @@
 
     &__card-number {
         position: relative;
+
         max-width: 349px;
         height: 43px;
-        padding: 10px 15px 10px 60px;
-        background-color: $main-color;
         border-radius: 9px;
+        background-color: $main-color;
+
+        padding: 10px 15px 10px 60px;
+
         font-family: "Georgia", serif;
         color: rgb(84, 84, 84);
         font-size: 20px;
@@ -45,10 +52,10 @@
     }
 
     &__legal-info {
+        color: rgb(178, 178, 178);
         font-size: 12px;
         line-height: 18px;
         font-style: italic;
-        color: rgb(178, 178, 178);
     }
 }
 

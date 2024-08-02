@@ -1,8 +1,10 @@
 @media screen and (max-width: 1084px) {
     .not-only__block {
-        padding-top: 0;
         align-self: center;
-        width: 38%
+
+        width: 38%;
+
+        padding-top: 0;
     }
 
     .not-only__photo {
@@ -23,13 +25,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        
         width: 100%
     }
-
+    
     .not-only__photo {
-        margin-top: 100px;
         align-self: flex-end;
-        max-width: 80.5%
+
+        max-width: 80.5%;
+
+        margin-top: 100px;
     }
 }
 
@@ -39,7 +44,8 @@
     }
 
     .not-only__photo {
+        max-width: 86.7%;
+        
         margin-top: 105px;
-        max-width: 86.7%
     }
 }

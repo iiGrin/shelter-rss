@@ -155,9 +155,7 @@ window.addEventListener("DOMContentLoaded", () => {
         petCardContent = popup.querySelector('.pet-card__info'),
         popupClose = document.querySelector(".close-popup"),
         sliderContent = document.querySelector('.slider'),
-        defaultMainSliderPetsNames = ['Katrine', 'Jennifer', 'Woody'],
-        petsNames = [],
-        popupButtons = sliderContent.querySelectorAll('button');
+        popupButtons = sliderContent.querySelectorAll('button.button_popup');
 
 
     // HAMBURGER & MENU ACTION
@@ -248,7 +246,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
     function updateSlider() {
 
-
         // Получаем индекс текущего слайда
         const startIndex = currentSlide - 1;
         const endIndex = currentSlide + 1;
@@ -264,11 +261,11 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
         // Удаляем лишние слайды, если их больше 3
-        while (slides.children.length > 3) {
-            // Добавляем класс для анимации удаления
-            const slideToRemove = slides.firstChild;
-            slideToRemove.classList.add('remove');
-            }
+        // while (slides.children.length > 3) {
+        //     // Добавляем класс для анимации удаления
+        //     const slideToRemove = slides.firstChild;
+        //     slideToRemove.classList.add('remove');
+        //     }
     }
 
 

@@ -2,16 +2,19 @@
     padding: 80px 0 100px 0;
 
     &__wrapper {
-        max-width: 850px;
-        margin: 0 auto;
         display: grid;
         grid-template-columns: 300px minmax(auto, 450px);
         justify-content: space-between;
+
+        max-width: 850px;
+
+        margin: 0 auto;
     }
 
     &__block {
-        padding-left: 20px;
         align-self: center;
+
+        padding-left: 20px;
 
         &__text {
             color: rgb(76, 76, 76);

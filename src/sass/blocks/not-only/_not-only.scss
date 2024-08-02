@@ -1,6 +1,7 @@
 .not-only {
-    padding-top: 180px;
     background: $only-bg;
+
+    padding-top: 180px;
 
     &__wrapper {
         display: flex;
@@ -11,14 +12,17 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding-top: 163px;
+
         max-width: 460px;
+
+        padding-top: 163px;
 
         &__text {
             margin: 42px 0 42px 0;
+
+            color: rgb(205, 205, 205);
             font-size: 15px;
             line-height: 160%;
-            color: rgb(205, 205, 205);
         }
     }
 }

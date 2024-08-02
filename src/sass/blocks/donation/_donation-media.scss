@@ -15,13 +15,15 @@
     .donation {
 
         &__wrapper {
-            max-width: 505px;
             flex-direction: column;
             row-gap: 60px;
+
+            max-width: 505px;
         }
 
         &__photo {
             max-width: 100%;
+
             order: 2;
         }
     }
@@ -49,14 +51,17 @@
 
         &__card-number {
             max-width: 93.7%;
+
             padding-top: 13px;
+
             font-size: 15px;
             line-height: 110%;
         }
 
         &__legal-info {
-            max-width: 93.3%;
             text-align: justify;
+            
+            max-width: 93.3%;
         }
     }
 }

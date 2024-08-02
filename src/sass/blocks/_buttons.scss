@@ -4,18 +4,22 @@
     border: none;
     border-radius: 100px;
     background-color: $main-color;
+
+    font-family: "Georgia", serif;
+    color: rgb(41, 41, 41);
     font-size: 17px;
     line-height: 52px;
     text-align: center;
-    font-family: "Georgia", serif;
-    color: rgb(41, 41, 41);
     cursor: pointer;
+
     transition: all 0.3s;
     user-select: none;
 
     &_friends {
         display: block;
+
         width: 261px;
+
         margin: 0 auto;
     }
 
@@ -28,8 +32,8 @@
     }
 
     &_item {
-        background-color: unset;
         border: 2px solid $hover-button;
+        background-color: unset;
     }
 
     &_arrow {
@@ -41,8 +45,8 @@
 
     &_circle {
         width: 52px;
-        background-color: unset;
         border: 2px solid $main-color;
+        background-color: unset;
 
         &:hover {
             background-color: $main-color;

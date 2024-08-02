@@ -1,10 +1,12 @@
 @media screen and (max-width: 768px) {
     .about {
+        
         &__wrapper {
-            max-width: 430px;
             grid-template-columns: 1fr;
             align-items: center;
             row-gap: 80px;
+
+            max-width: 430px;
         }
 
         &__block {
@@ -13,6 +15,7 @@
 
         &__photo {
             margin: 0 auto;
+            
             order: 2;
         }
     }

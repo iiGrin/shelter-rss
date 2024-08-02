@@ -4,11 +4,15 @@
 @import 'base/mixins';
 
 * {
-    font-family: 'Arial', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+
+    box-sizing: border-box;
+
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
+
+    font-family: 'Arial', sans-serif;
+
     scroll-behavior: smooth;
 }
 
@@ -20,8 +24,8 @@ h4 {
 }
 
 a {
-    text-decoration: none;
     color: rgb(205, 205, 205);
+    text-decoration: none;
 }
 
 .active {
@@ -34,12 +38,14 @@ a {
 
 @keyframes slideOut {
     0% {
-      transform: translateX(0);
-      opacity: 1;
+        opacity: 1;
+
+        transform: translateX(0);
     }
     100% {
-      transform: translateX(-100%);
-      opacity: 0;
+        opacity: 0;
+
+        transform: translateX(-100%);
     }
   }
   
@@ -48,19 +54,23 @@ a {
 
     &_lock {
         overflow: hidden;
+
         padding-right: 15px;
     }
 }
 
 .container {
     position: relative;
+
     width: 1200px;
+
     margin: 0 auto;
 }
 
 @media screen and (max-width: 1280px) {
     .container {
         width: auto;
+        
         margin: 0 40px;
     }
 }
