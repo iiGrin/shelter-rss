@@ -30,6 +30,7 @@ window.addEventListener("DOMContentLoaded", () => {
     function showModalContent() {
         popup.classList.add('popup_active');
         body.classList.add('body_lock');
+        console.log("modal");
     }
 
     sliderContent.addEventListener('click', (event) => {
