@@ -15,7 +15,6 @@
     <!-- Twitter -->
 
     <!-- Favicon  -->
-
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -107,15 +106,62 @@
             <h2 class="heading heading_section heading_our-friends">
                 Our friends who<br>are looking for a house
             </h2>
-            <div class="slider">
-                <div class="slider__controller slider__controller_prev">
-                    <button id="prev" class="button button_arrow"></button>
+            <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+
+                    </ul>
                 </div>
-                <div class="slider__content">
-                </div>
-                <div class="slider__controller slider__controller_next">
-                    <button id="next" class="button button_arrow"></button>
-                </div>
+                <div class="splide__arrows splide__arrows--ltr">
+                    <button
+                      class="splide__arrow splide__arrow--prev"
+                      type="button"
+                      aria-label="Previous slide"
+                      aria-controls="splide01-track"
+                    >
+                    <svg 
+                    width="14.000000"
+                    height="6.000000" 
+                    viewBox="0 0 14 6" 
+                    fill="none" 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                
+                    <defs/>
+                    <path 
+                    id="Arrow"
+                    d="M14 2L14 4L3 4L3 6L0 3L3 0L3 2L14 2Z" 
+                    fill="#292929" 
+                    fill-opacity="1.000000" 
+                    fill-rule="nonzero"/>
+                </svg>
+                
+                    </button>
+                    <button
+                      class="splide__arrow splide__arrow--next"
+                      type="button"
+                      aria-label="Next slide"
+                      aria-controls="splide01-track"
+                    >
+                    <svg 
+                    width="14.000000"
+                    height="6.000000" 
+                    viewBox="0 0 14 6" 
+                    fill="none" 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                
+                    <defs/>
+                    <path 
+                    id="Arrow"
+                    d="M14 2L14 4L3 4L3 6L0 3L3 0L3 2L14 2Z" 
+                    fill="#292929" 
+                    fill-opacity="1.000000" 
+                    fill-rule="nonzero"/>
+                </svg>
+                
+                    </button>
+                  </div>
             </div>
             <a href="our-pets.html" class="button button_friends">Get to know the rest</a>
         </div>
@@ -252,6 +298,7 @@
         </div>
     </div>
 
+    <script src="js/splide.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

@@ -60,6 +60,15 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .button {
+
+        &_friends {
+            margin-top: 146px;
+        }
+    }
+}
+
 @media screen and (max-width: 440px) {
     .button {
 

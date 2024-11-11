@@ -1,15 +1,35 @@
-@media screen and (max-width: 1084px) {
-    .slider__content {
-        justify-content: space-around;
+@media screen and (max-width: 1199px) {
+    .splide {
 
-        &_our-pets {
-            justify-content: center;
+        &__track {
+            width: 630px;
         }
 
-        .slider__item {
+        &__arrow {
+            &--prev {
+                left: 20px;
+            }
+            &--next {
+                right: 20px;
+            }
+        }
+    }
+}
 
-            &_pc {
-                display: none;
+@media screen and (max-width: 992px) {
+    .splide {
+
+        &__track {
+            width: 580px;
+        }
+
+        &__arrow {
+            &--prev {
+                left: 0;
+            }
+
+            &--next {
+                right: 0;
             }
         }
     }
@@ -17,17 +37,21 @@
 
 
 @media screen and (max-width: 768px) {
-    .slider__content {
-        justify-content: space-between;
+    .splide {
+        &__track {
 
-        &_our-pets {
-            justify-content: center;
         }
-    }
 
-    .slider__controller {
-        &_our-pets {
-            margin-top: 40px;
+        &__arrow {
+            position: relative;
+        }
+
+        &__arrows {
+            position: relative;
+            display: flex;  
+            justify-content: center;
+            column-gap: 80px;    
+            margin: 50px 0 42px 0;      
         }
     }
 }
@@ -45,6 +69,15 @@
             &_tablet {
                 display: none;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .splide {
+
+        &__track {
+            width: 270px;
         }
     }
 }
