@@ -1,11 +1,67 @@
+@media screen and (max-width: 1280px) {
+    .our-pets {
+        .slider {
+            &__list {
+                grid-template-columns: repeat(3, 270px);
+                grid-template-rows: repeat(3, 435px);
+                justify-content: space-evenly;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .our-pets {
+        .slider {
+
+            &__list {
+                grid-template-columns: repeat(2, 270px);
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     .our-pets {
         padding: 180px 0 70px 0;
+
+        .slider {
+            margin-top: 30px;
+
+            &__list {
+                justify-content: center;
+                row-gap: 30px;
+            }
+        }
+    }
+
+    .slider {
+        &__controller_our-pets {
+            margin-top: 42px;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .our-pets {
+
+        .slider {
+
+            &__list {
+                grid-template-columns: 270px;
+
+            }
+        }
     }
 }
 
 @media screen and (max-width: 440px) {
     .our-pets {
         padding: 162px 0 42px 0;
+
+        .slider {
+            margin-top: 42px;
+        }
     }
 }

@@ -1,12 +1,11 @@
 window.addEventListener("DOMContentLoaded", () => {
 
+    // Header menu actions
     const
-        body = document.querySelector("body"),
         hamburger = document.querySelector(".hamburger"),
         navMenu = document.querySelector(".nav-menu"),
-        navMenuLinks = document.querySelectorAll(".nav-menu__list");
+        navMenuLinks = navMenu.querySelectorAll(".nav-menu__list-item");
 
-    // HAMBURGER & MENU ACTION
     hamburger.addEventListener("click", () => {
         hamburger.classList.toggle("hamburger_active");
         navMenu.classList.toggle("nav-menu_active");
@@ -18,28 +17,6 @@ window.addEventListener("DOMContentLoaded", () => {
             navMenu.classList.remove("nav-menu_active");
         });
     });
-
-    // // Modal
-    // function showModalContent() {
-    //     popup.classList.add('popup_active');
-    //     body.classList.add('body_lock');
-    //     console.log("modal");
-    // }
-
-    // sliderContent.addEventListener('click', (event) => {
-    //     const target = event.target;
-
-    //     if (target && target.classList.contains('button_popup')) {
-    //         popupButtons.forEach((item) => {
-    //             if (target == item) {
-    //                 showModalContent();
-    //             }
-    //         });
-    //     }
-    // });
-
-    // get slider data item 
-    // petCard class
 
     class PetCard {
         constructor(src, alt, name, parentSelector, ...classes) {
@@ -53,53 +30,48 @@ window.addEventListener("DOMContentLoaded", () => {
         render() {
             const slide = document.createElement("li");
             if (!this.classes.length) {
-                this.slide = "splide__slide";
-                slide.classList.add(this.slide);
+                const defaultClass = "splide__slide";
+                slide.classList.add(defaultClass);
             } else {
-                this.classes.forEach(className => slide.classList.add(className))
+                this.classes.forEach(className => slide.classList.add(className));
             }
 
             slide.innerHTML =
                 `
-                <div class="splide__slide__photo">
-                    <img src="${this.src}" alt="${this.alt}">
-                </div>
-                <div class="splide__slide__descr">
-                    <h3 class="heading heading_item">${this.name}</h3>
-                    <button class="button button_item button_popup">Learn more</button>
-                </div>
+                    <div class="splide__slide__photo">
+                        <img src="${this.src}" alt="${this.alt}">
+                    </div>
+                    <div class="splide__slide__descr">
+                        <h3 class="heading heading_item">${this.name}</h3>
+                        <button class="button button_item button_popup">Learn more</button>
+                    </div>
             `;
             this.parent.append(slide);
         }
     }
 
-    const
-        sliderContent = document.querySelector('.slider__content'),
-        sliderItemsWrapper = document.querySelector('.slider__content__items'),
-        nextBtn = document.querySelector('#next'),
-        prevBtn = document.querySelector('#prev');
-
-    let cards = [], // Массив для хранения карточек
-        currentSlide = 0, // Индекс текущего слайда
-        cardCount = 0; // Количество карточек
-
     // get data function
     const getResource = async (url) => {
-        const result = await fetch(url);
-        if (!result.ok) { // error get
-            throw new Error(`Couldn't fetch ${url}, status: ${result.status}`);
+        try {
+            const request = await fetch(url);
+            if (!request.ok) {
+                throw new Error(`Couldn't fetch ${url}, status: ${request.status}`);
+            }
+            const response = await request.json();
+            return response;
+        } catch (error) {
+            console.error('Error: ', error);
+            throw new Error(error);
         }
-
-        return await result.json();
     };
 
-    getResource('http://localhost:3000/pets')
+    getResource('http://localhost:3000/pets') // get data and cards render
         .then(data => {
-            data.forEach((item) => {
-                new PetCard(item.src, item.alt, item.name, '.splide .splide__list').render(); // отрисовка карточек по полученным дынным 
-            })
+            data.forEach((pet) => {
+                new PetCard(pet.src, pet.alt, pet.name, '.splide .splide__list').render();
+            });
 
-            const slider = new Splide('.splide', {
+            const slider = new Splide('.splide', { // slider options
                 type: 'loop',
                 perPage: 3,
                 perMove: 1,
@@ -112,7 +84,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 }
             });
             slider.mount();
-        })
+        });
 });
 
 

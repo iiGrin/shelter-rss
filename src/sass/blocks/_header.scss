@@ -30,7 +30,6 @@
 }
 
 .logo {
-
     a {
         display: flex;
         flex-direction: column;
@@ -42,10 +41,6 @@
 
     span {
         display: block;
-
-        &:active {
-            color: black;
-        }
     }
 
     &-title {
@@ -68,6 +63,17 @@
         font-weight: 400;
         line-height: 15px;
         letter-spacing: 0.082rem;
+    }
+
+    &:hover {
+        span {
+            color: rgb(255, 183, 100);
+        }
+    }
+    &:active {
+        span {
+            color: unset;
+        }
     }
 }
 
