@@ -18,16 +18,16 @@ class PetCard {
 
         slide.innerHTML =
             `
-                <div class="splide__slide__photo">
-                    <img src="${this.src}" alt="${this.alt}">
-                </div>
-                <div class="splide__slide__descr">
-                    <h3 class="heading heading_item">${this.name}</h3>
-                    <button class="button button_item button_popup">Learn more</button>
-                </div>
-        `;
+                        <div class="splide__slide__photo">
+                            <img src="${this.src}" alt="${this.alt}">
+                        </div>
+                        <div class="splide__slide__descr">
+                            <h3 class="heading heading_item">${this.name}</h3>
+                            <button class="button button_item button_popup">Learn more</button>
+                        </div>
+                `;
         this.parent.append(slide);
     }
 }
 
-export default PetCard ;
+export default PetCard;

@@ -1,21 +1,21 @@
-import { getResource } from "./utils.js";
-import PetCard from "./PetCard.js";
+import { getResource } from "../services/services";
+import PetCard from "./cards";
 
-document.addEventListener('DOMContentLoaded', () => {
+function pagination(cardsClass, parentSelector, pageNumSelector, buttonPrevSelector, buttonNextSelector, buttonStartSelector, buttonEndSelector) {
 
         const petsPerPage = 8;
         let currentPage = 1;
         let totalPages = 1;
         let petsData = [];
     
-        const sliderList = document.querySelector('.slider__list'); // pets container
-        const pageNum = document.querySelector('.slider__page-num');
-        const prevButton = document.querySelector('.button_prev');
-        const nextButton = document.querySelector('.button_next');
-        const startButton = document.querySelector('.button_start-page');
-        const endButton = document.querySelector('.button_end-page');
+        const sliderList = document.querySelector(parentSelector); // pets container
+        const pageNum = document.querySelector(pageNumSelector);
+        const prevButton = document.querySelector(buttonPrevSelector);
+        const nextButton = document.querySelector(buttonNextSelector);
+        const startButton = document.querySelector(buttonStartSelector);
+        const endButton = document.querySelector(buttonEndSelector);
 
-    async function pagination() { // get pets data
+    async function renderPug() { // get pets data
         try {
             petsData = await getResource('http://localhost:3000/pets')
             totalPages = Math.ceil(petsData.length / petsPerPage);
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         sliderList.innerHTML = ''; // update data list 
         petsToShow.forEach(pet => {
-            new PetCard(pet.src, pet.alt, pet.name, '.slider__list', ).render();
+            new cardsClass(pet.src, pet.alt, pet.name, parentSelector).render();
         });
         pageNum.textContent = `${page} / ${totalPages}`; // updata page num
     }
@@ -74,6 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updataButtonsState();
     });
 
-    // Инициализация
-    pagination();
-});
+    renderPug();
+}
+
+export default pagination;
